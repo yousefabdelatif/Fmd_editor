@@ -1,0 +1,3 @@
+# List your project dependencies here
+# PySide6
+# other_library==1.2.3
