@@ -53,7 +53,10 @@ def test_save_data_to_disk():
             assert model.data == "data updated"
 
     finally:
-       pass
+        with open(dataPath, "w") as f:
+            f.write("welcome to itx_editor")
+
+
 
 
 

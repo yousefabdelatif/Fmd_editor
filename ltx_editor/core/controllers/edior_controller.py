@@ -21,10 +21,6 @@ class EditorController:
 
 
 
-    def loadTemplate(self):
-        if Path.exists(Path("Template_001.html")):
-            with open(Path("Template_001.html"),'r') as file:
-                self.__template=file.read()
 
 
 
