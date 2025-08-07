@@ -1,4 +1,4 @@
-from ltx_editor.core.models.editor_model import EditorModel
+from ltx_editor.models.editor_model import EditorModel
 
 
 def test_editor_model()->None:

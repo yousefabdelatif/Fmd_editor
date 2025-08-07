@@ -5,132 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e15d867-0872-4313-adf1-a5587124430d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ltx_editor/core/models/editor_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_editor_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ltx_editor/controllers/edior_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Template_001.html" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/Templates/0_0_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/LatexTemplete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/YOUR_MARKDOWN_FILE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/.github/FUNDING.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/a11y/assistive-mml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/a11y/complexity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/a11y/explorer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/a11y/semantic-enrich.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/a11y/sre.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/adaptors/liteDOM.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/asciimath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/mml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/mml/entities.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/mml/extensions/mml3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/mml/extensions/mml3.sef.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex-base.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex-full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/action.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/all-packages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/ams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/amscd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/autoload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/bbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/boldsymbol.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/braket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/bussproofs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/cancel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/cases.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/centernot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/color.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/colortbl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/colorv2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/configmacros.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/empheq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/enclose.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/extpfeil.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/gensymb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/html.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/mathtools.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/mhchem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/newcommand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/noerrors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/noundefined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/physics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/require.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/setoptions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/tagformat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/textcomp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/textmacros.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/unicode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/upgreek.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/input/tex/extensions/verb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/latest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/mml-chtml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/mml-svg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/node-main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/tex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Math-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/svg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/output/svg/fonts/tex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/base.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/ca.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/da.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/de.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/en.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/es.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/fr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/hi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/it.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/nb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/nemeth.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/nn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/sre/mathmaps/sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/startup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/tex-chtml-full-speech.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/tex-chtml-full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/tex-chtml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/tex-mml-chtml.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/tex-mml-svg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/tex-svg-full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/tex-svg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/ui/lazy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/ui/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/es5/ui/safe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/Templetes/mathjax-MathJax-600692a/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/core/controllers/edior_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/core/controllers/edior_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/core/controllers/edior_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/core/controllers/projectController.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/controllers/projectController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/core/models/editor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/models/editor_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/core/models/project_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/models/project_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/editor_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/editor_window.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_editor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_editor_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_project_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_project_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/testproject/src/data.itx" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testproject/src/data.itx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,17 +51,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev__0.1",
-    "last_opened_file_path": "D:/dev/ltx_editor/tests"
+    "last_opened_file_path": "D:/dev/ltx_editor/ltx_editor/core"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\ltx_editor\ltx_editor\core" />
+      <recent name="D:\dev\ltx_editor" />
+      <recent name="D:\dev\ltx_editor\docs" />
       <recent name="D:\dev\ltx_editor\tests" />
       <recent name="D:\dev\ltx_editor\ltx_editor\Templetes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\dev\ltx_editor\ltx_editor\Templetes" />
       <recent name="D:\dev\ltx_editor\ltx_editor" />
+      <recent name="D:\dev\ltx_editor\ltx_editor\Templetes" />
     </key>
   </component>
   <component name="RunManager">

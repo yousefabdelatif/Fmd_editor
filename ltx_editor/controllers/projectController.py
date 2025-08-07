@@ -1,6 +1,7 @@
 from pathlib import Path
 
-from ltx_editor import ProjectModel
+from ltx_editor.core.Constants import TEMPLATE_VERSION
+from ltx_editor.models.project_model import ProjectModel
 
 
 class ProjectController:
@@ -13,13 +14,14 @@ class ProjectController:
 
     def createNewProject(self,path :Path,name:str):
 
-        self.__currentProject.createNew(path=path,name=name)
+        self.__currentProject.create_new(path=path,name=name,template_version=TEMPLATE_VERSION)
 
 
     def loadProjact(self, path: Path):
-        self.__currentProject.loadFromDisk(path=path)
+        self.__currentProject.load_from_disk(path=path)
 
-
+    def save_project(self,data:str):
+        self.__currentProject.save_data_to_disk(data)
     def deleteProject(self):
         pass
 

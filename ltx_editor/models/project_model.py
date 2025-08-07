@@ -13,7 +13,7 @@ class ProjectModel:
         self.__data: str = None
         self.__config_data: Path = None
 
-    def save_data_to_disk(self, data: str):
+    def save_data_to_disk(self, data: str) -> int:
         """Saves the project __data to the disk."""
         if not self.__basePath:
             raise ValueError("Cannot save __data: project base path is not set.")
@@ -22,6 +22,7 @@ class ProjectModel:
             with open(self.__basePath / Path("src/data.itx"), "w") as file:
                 self.__data = data
                 file.write(data)
+                return 0
         except IOError as e:
             raise IOError(f"Failed to save data to disk: {e}")
 

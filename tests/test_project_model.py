@@ -3,7 +3,7 @@ import shutil
 from pathlib import  Path
 
 from ltx_editor.core.Constants import TEMPLATE_VERSION
-from ltx_editor.core.models.project_model import ProjectModel
+from ltx_editor.models.project_model import ProjectModel
 
 
 def test_create_project():
