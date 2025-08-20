@@ -11,7 +11,7 @@ def test_create_project():
     name ="testproject"
     model =ProjectModel()
     project_path = path / name
-    dataPath =project_path /"src"/"data.itx"
+    dataPath =project_path /"src"/data.tex
     try:
         model.create_new(name=name, path=path, template_version=TEMPLATE_VERSION)
 
@@ -31,7 +31,7 @@ def test_load_project():
     name ="testproject"
     model =ProjectModel()
     project_path = path / name
-    dataPath =project_path /"src"/"data.itx"
+    dataPath =project_path /"src"/data.tex
 
     model.load_from_disk(path=project_path)
 
@@ -45,7 +45,7 @@ def test_save_data_to_disk():
     project_path = path / "testproject"
     model.load_from_disk(project_path.absolute())
 
-    dataPath =project_path /"src"/"data.itx"
+    dataPath =project_path /"src"/data.tex
     try:
         model.save_data_to_disk("data updated")
         with open(dataPath, "r") as f:

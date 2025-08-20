@@ -2,9 +2,214 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Custom Document</title>
+    <style>
+        /* Global styles for the body and the doc-document container */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        doc-document {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(21cm, 1fr));
+            left:50%
+            right:50%
+            gap: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Print styles */
+        @media print {
+            body { background-color: #fff; }
+            doc-document {
+                display: block;
+                padding: 0;
+                background-color: transparent;
+            }
+            @page {
+                size: A4;
+                margin: 2cm;
+            }
+        }
+    </style>
 </head>
 <body>
+
+%%%%
+
+<script>
+    // --- doc-document (Container) ---
+    class DocDocument extends HTMLElement {
+        constructor() {
+            super();
+            // A simple container, no Shadow DOM needed for this example
+        }
+    }
+
+    // --- doc-page (The Page Itself) ---
+    class DocPage extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
+                <style>
+                    :host {
+                        display: block;
+                        box-sizing: border-box;
+                        width: 21cm;
+                        min-height: 29.7cm;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                        padding: 2cm;
+                    }
+                    @media print {
+                        :host {
+                            width: auto;
+                            min-height: auto;
+                            padding: 0;
+                            box-shadow: none;
+                            page-break-after: always;
+                        }
+                    }
+                </style>
+                <slot></slot>
+            `;
+        }
+    }
+
+    // --- doc-section (Content Section) ---
+    class DocSection extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            const title = this.getAttribute('title');
+            shadowRoot.innerHTML = `
+                <style>
+                    :host { display: block; margin-top: 1.5rem; }
+                    h2 { font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem; }
+                </style>
+                ${title ? `<h2>${title}</h2>` : ''}
+                <slot></slot>
+            `;
+        }
+    }
+
+    // --- doc-link (Link) ---
+    class DocLink extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            const href = this.getAttribute('href') || '#';
+            const target = this.getAttribute('target') || '_self';
+            shadowRoot.innerHTML = `
+                <style>
+                    a {
+                        color: #007bff;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    @media print {
+                        a { color: #000; }
+                        a::after { content: " (" attr(href) ")"; font-size: 80%; }
+                    }
+                </style>
+                <a href="${href}" target="${target}"><slot></slot></a>
+            `;
+        }
+    }
+
+    // --- doc-image (Image) ---
+    class DocImage extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            const src = this.getAttribute('src');
+            const alt = this.getAttribute('alt') || '';
+            const width = this.getAttribute('width');
+            shadowRoot.innerHTML = `
+                <style>
+                    :host { display: block; margin: 1rem 0; text-align: center; }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        page-break-inside: avoid;
+                    }
+                </style>
+                <img src="${src}" alt="${alt}" ${width ? `width="${width}"` : ''}>
+            `;
+        }
+    }
+
+    // --- doc-table (Table) ---
+    class DocTable extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
+                <style>
+                    :host { display: grid; }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+                </style>
+                <table><slot></slot></table>
+            `;
+        }
+    }
+
+    // --- doc-row (Table Row) ---
+    class DocRow extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.innerHTML = `
+                <style>
+                    :host { display: contents; }
+                    tr { page-break-inside: avoid; }
+                </style>
+                <tr><slot></slot></tr>
+            `;
+        }
+    }
+
+    // --- doc-column (Table Column) ---
+    class DocColumn extends HTMLElement {
+        constructor() {
+            super();
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            const isHeader = this.hasAttribute('header');
+            shadowRoot.innerHTML = `
+                <style>
+                    :host {
+                        border: 1px solid #ccc;
+                        padding: 8px;
+                        display: block;
+                    }
+                    :host([header]) {
+                        font-weight: bold;
+                        background-color: #f0f0f0;
+                    }
+                </style>
+                ${isHeader ? '<th><slot></slot></th>' : '<td><slot></slot></td>'}
+            `;
+        }
+    }
+
+    // Register all custom elements
+    customElements.define('doc-document', DocDocument);
+    customElements.define('doc-page', DocPage);
+    customElements.define('doc-section', DocSection);
+    customElements.define('doc-link', DocLink);
+    customElements.define('doc-image', DocImage);
+    customElements.define('doc-table', DocTable);
+    customElements.define('doc-row', DocRow);
+    customElements.define('doc-column', DocColumn);
+</script>
 
 </body>
 </html>

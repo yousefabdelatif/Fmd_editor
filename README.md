@@ -11,5 +11,5 @@ A modern PySide application for editing LaTeX files. This project is structured 
 ### Usage
 Run the main application from the root directory:
 ```bash
-python ltx_editor/main.py
+python ltx_editor/ya.py
 ```

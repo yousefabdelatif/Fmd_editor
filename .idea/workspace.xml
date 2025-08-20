@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e15d867-0872-4313-adf1-a5587124430d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ltx_editor/controllers/edior_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/core/controllers/edior_controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/core/controllers/projectController.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/controllers/projectController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/core/models/editor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/models/editor_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/core/models/project_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/models/project_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/editor_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/editor_window.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_editor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_editor_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/Templates/0_0_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/Templates/0_0_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/controllers/edior_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/controllers/edior_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/controllers/projectController.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/controllers/projectController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/models/editor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/models/editor_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/models/project_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/models/project_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_project_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_project_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,17 +41,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.editor.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev__0.1",
-    "last_opened_file_path": "D:/dev/ltx_editor/ltx_editor/core"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.editor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__0.1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dev/ltx_editor/ltx_editor/core&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\dev\ltx_editor\ltx_editor\core" />
@@ -63,6 +61,7 @@
       <recent name="D:\dev\ltx_editor\ltx_editor\Templetes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\ltx_editor" />
       <recent name="D:\dev\ltx_editor\ltx_editor" />
       <recent name="D:\dev\ltx_editor\ltx_editor\Templetes" />
     </key>

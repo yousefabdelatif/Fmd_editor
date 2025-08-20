@@ -18,14 +18,14 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QTransform)
 from PySide6.QtWebEngineWidgets import QWebEngineView
 from PySide6.QtWidgets import (QApplication, QHBoxLayout, QMainWindow, QMenu,
-    QMenuBar, QPushButton, QSizePolicy, QStatusBar,
-    QTextEdit, QVBoxLayout, QWidget)
+    QMenuBar, QSizePolicy, QSplitter, QStatusBar,
+    QTextEdit, QWidget)
 
 class Ui_ltx_editor(object):
     def setupUi(self, ltx_editor):
         if not ltx_editor.objectName():
             ltx_editor.setObjectName(u"ltx_editor")
-        ltx_editor.resize(804, 546)
+        ltx_editor.resize(1023, 533)
         ltx_editor.setSizeIncrement(QSize(16, 9))
         self.action_newproject = QAction(ltx_editor)
         self.action_newproject.setObjectName(u"action_newproject")
@@ -43,52 +43,35 @@ class Ui_ltx_editor(object):
         self.actionSave.setObjectName(u"actionSave")
         self.centralwidget = QWidget(ltx_editor)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.horizontalLayout_6 = QHBoxLayout(self.centralwidget)
-        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.TextEditor = QTextEdit(self.centralwidget)
+        self.horizontalLayout = QHBoxLayout(self.centralwidget)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.splitter = QSplitter(self.centralwidget)
+        self.splitter.setObjectName(u"splitter")
+        self.splitter.setOrientation(Qt.Orientation.Horizontal)
+        self.TextEditor = QTextEdit(self.splitter)
         self.TextEditor.setObjectName(u"TextEditor")
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
-        sizePolicy.setHorizontalStretch(2)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.TextEditor.sizePolicy().hasHeightForWidth())
         self.TextEditor.setSizePolicy(sizePolicy)
-        self.TextEditor.setMinimumSize(QSize(500, 0))
+        self.TextEditor.setMinimumSize(QSize(0, 0))
         self.TextEditor.setMaximumSize(QSize(16777215, 16777215))
-
-        self.horizontalLayout_6.addWidget(self.TextEditor)
-
-        self.verticalLayout_5 = QVBoxLayout()
-        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-
-        self.horizontalLayout_6.addLayout(self.verticalLayout_5)
-
-        self.verticalLayout_6 = QVBoxLayout()
-        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.verticalLayout_6.setContentsMargins(-1, -1, 0, -1)
-        self.Recompile_btn = QPushButton(self.centralwidget)
-        self.Recompile_btn.setObjectName(u"Recompile_btn")
-
-        self.verticalLayout_6.addWidget(self.Recompile_btn)
-
-        self.Viewer = QWebEngineView(self.centralwidget)
+        self.splitter.addWidget(self.TextEditor)
+        self.Viewer = QWebEngineView(self.splitter)
         self.Viewer.setObjectName(u"Viewer")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
-        sizePolicy1.setHorizontalStretch(3)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.Viewer.sizePolicy().hasHeightForWidth())
-        self.Viewer.setSizePolicy(sizePolicy1)
-        self.Viewer.setMinimumSize(QSize(270, 0))
+        sizePolicy.setHeightForWidth(self.Viewer.sizePolicy().hasHeightForWidth())
+        self.Viewer.setSizePolicy(sizePolicy)
+        self.Viewer.setMinimumSize(QSize(500, 0))
         self.Viewer.setUrl(QUrl(u"about:blank"))
+        self.splitter.addWidget(self.Viewer)
 
-        self.verticalLayout_6.addWidget(self.Viewer)
-
-
-        self.horizontalLayout_6.addLayout(self.verticalLayout_6)
+        self.horizontalLayout.addWidget(self.splitter)
 
         ltx_editor.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(ltx_editor)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 804, 22))
+        self.menubar.setGeometry(QRect(0, 0, 1023, 22))
         self.menufile = QMenu(self.menubar)
         self.menufile.setObjectName(u"menufile")
         self.menuedit = QMenu(self.menubar)
@@ -121,10 +104,9 @@ class Ui_ltx_editor(object):
         self.actionOpenProject.setText(QCoreApplication.translate("ltx_editor", u"Open project", None))
         self.actionfind.setText(QCoreApplication.translate("ltx_editor", u"Find in files", None))
         self.actionFInd_replace.setText(QCoreApplication.translate("ltx_editor", u"FInd & replace", None))
-        self.actionExport.setText(QCoreApplication.translate("ltx_editor", u"Export", None))
+        self.actionExport.setText(QCoreApplication.translate("ltx_editor", u"Export as ", None))
         self.actionimport.setText(QCoreApplication.translate("ltx_editor", u"import", None))
         self.actionSave.setText(QCoreApplication.translate("ltx_editor", u"Save ", None))
-        self.Recompile_btn.setText(QCoreApplication.translate("ltx_editor", u"Recompile", None))
         self.menufile.setTitle(QCoreApplication.translate("ltx_editor", u"file", None))
         self.menuedit.setTitle(QCoreApplication.translate("ltx_editor", u"edit", None))
         self.menuhelp.setTitle(QCoreApplication.translate("ltx_editor", u"help", None))

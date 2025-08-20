@@ -34,6 +34,12 @@ class ProjectController:
 
     def getProjectData(self):
         return self.__currentProject.data
+    @property
+    def base_path(self):
+        return self.__currentProject.basePath
+    @property
+    def project_name(self):
+        return self.__currentProject.projectName
 
 
 

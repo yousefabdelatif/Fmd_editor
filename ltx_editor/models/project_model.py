@@ -19,7 +19,7 @@ class ProjectModel:
             raise ValueError("Cannot save __data: project base path is not set.")
 
         try:
-            with open(self.__basePath / Path("src/data.itx"), "w") as file:
+            with open(self.__basePath / Path("src/data.tex"), "w") as file:
                 self.__data = data
                 file.write(data)
                 return 0
@@ -42,12 +42,12 @@ class ProjectModel:
             raise ValueError(f"Failed to parse config.json at {self.__basePath / 'config.json'}")
 
 
-#import data.itx
+#import data.tex file
         try:
-            with open(self.__basePath / "src"/ "data.itx", "r") as file:
+            with open(self.__basePath / "src"/ "data.tex", "r") as file:
                 self.__data = file.read()
         except FileNotFoundError:
-            raise FileNotFoundError(f"Source file not found at {self.__basePath / 'src/data.itx'}")
+            raise FileNotFoundError(f"Source file not found at {self.__basePath / 'src/data.tex'}")
 
     def create_new(self, name: str, path: Path, template_version: str):
         """Creates a new project directory structure and files."""
@@ -69,7 +69,7 @@ class ProjectModel:
                 json.dump(config_data, config_file, indent=4)
 
             initial_data = "welcome to itx_editor"
-            with open(project_path / "src/data.itx", "w") as data_file:
+            with open(project_path / "src/data.tex", "w") as data_file:
                 data_file.write(initial_data)
 
             self.__basePath = project_path
@@ -93,3 +93,6 @@ class ProjectModel:
     def TemplateVersion(self):
         return self.__template_version
 
+    @property
+    def basePath(self):
+        return self.__basePath
