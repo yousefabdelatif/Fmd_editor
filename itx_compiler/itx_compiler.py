@@ -28,24 +28,20 @@ class Itx_Compiler:
             if (elem[0]) == "<" and elem[1] != "/":
 
                 if a_tag_already_open:
-                    print("incounterd another tag inside " + elem)
                     depth = depth + 1
                     last_open_tag = elem
                     self.__tokenTree.insert(elem)
                     self.__tokenTree.goUforward()
 
                 else:
-                    print("new tag:" + elem)
                     a_tag_already_open = True
                     self.__tokenTree.insert(elem)
                     self.__tokenTree.gobackward()
 
 
             elif elem[:2] == "</":
-                print("dd")
                 if last_open_tag == elem:
                     a_tag_already_open = False
-                    print(last_open_tag + "is closed")
                 else:
                     last_open_tag = elem
                 self.__tokenTree.gobackward()
@@ -55,8 +51,11 @@ class Itx_Compiler:
 
 
             else:
-                print("normal text")
+                self.preprocessing(elem)
 
     # parse the code
     def parse(self, src: str):
-        return re.findall(r'<[^>]*>|[^<>\s]+', src)
+        return re.findall(r'@.*?\+|@.*?\(.*?\)', src)
+
+    def preprocessing(self, src: str) -> str:
+        print(re.findall(r"@.*?\(.*?\)", src))

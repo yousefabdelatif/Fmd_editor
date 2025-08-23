@@ -6,12 +6,13 @@ from itx_compiler.tokens.Formats import  Tokens
 
 
 
-class Token:
+class Token(ABC):
 
     def __init__(self,type:str,parent=None):
         self.type:str=type
         self.parentToken:Token=parent
         self.children:list=[]
+    @abstractmethod
     def apply(self)->str:
         action = self.type
         children_actions = ""

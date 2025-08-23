@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e15d867-0872-4313-adf1-a5587124430d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/itx_compiler/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itx_compiler/itx_compiler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itx_compiler/token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itx_compiler/tokens/Formats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itx_compiler/tokens/page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_itx_compiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itx_compiler/document.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itx_compiler/element.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itx_compiler/page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itx_compiler/section.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ltx_editor/ui/widgets/TextEditor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ltx_editor/ui/windows/Editor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ltx_editor/ui/windows/start_dialog_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itx_compiler/itx_compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/itx_compiler/itx_compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itx_compiler/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/itx_compiler/token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/controllers/edior_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/controllers/edior_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ltx_editor/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor_e.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltx_editor/ui/Ui_ltx_editor_e.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,16 +117,5 @@
       <updated>1754256072233</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/itx_compiler/itx_compiler.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
