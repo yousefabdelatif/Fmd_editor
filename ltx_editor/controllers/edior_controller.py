@@ -1,9 +1,9 @@
 # Necessary imports that were missing
+from matplotlib.font_manager import json_dump
+
 from ltx_editor.controllers.projectController import ProjectController
 from ltx_editor.core.Constants import TEMPLATE_VERSION
 from ltx_editor.models.editor_model import EditorModel
-# from ltx_editor.ui.Ui_ltx_editor import * # Assuming these are not needed
-# from ltx_editor.ui.Ui_ltx_editor_e import *
 
 from pathlib import Path
 import os
@@ -11,11 +11,14 @@ import subprocess
 from PyQt6.QtWidgets import QInputDialog, QFileDialog, QMessageBox
 from PyQt6.QtWebEngineWidgets import *
 from PyQt6.QtCore import QTimer
+from PyQt6.QtGui import *
+import json  # Changed from 'from json import *' for best practice
 
 from ltx_editor.ui.windows.Editor import EditorWindow
 from ltx_editor.ui.widgets.TextEditor import Editor
 from ltx_editor.ui.windows.start_dialog_window import StartDialogWindow
-
+from ltx_editor.core.fItx_compiler import  FitxCompiler
+from PyQt6.QtCore import QMarginsF
 
 class EditorController:
 
@@ -28,12 +31,12 @@ class EditorController:
         self.__timer = QTimer()
         self.__timer.setSingleShot(True)
         self.__editor_model.loadTemplate("0.0.1")
-
+        self.compiler=FitxCompiler()
     def view(self):
         self.__editorView.action_newproject.triggered.connect(self.__on_create_project)
         self.__editorView.actionOpenProject.triggered.connect(self.__on_open_project)
         self.__editorView.actionSave.triggered.connect(self.__on_save_date)
-
+        self.__editorView.reload_template_action.triggered.connect(self.__on_reload_template)
         # Connect to the TextEditor widget, which is a part of the EditorWindow
         self.__editorView.editor.textChanged.connect(self.__on_Code_changed)
 
@@ -115,15 +118,38 @@ class EditorController:
     def __on_save_date(self):
         # Correctly get the text from the editor widget
         self.__projectControllerInstance.save_project(self.__editorView.editor.text())
+        file_path = "./final_perfect_document.pdf"
+        try:
+            web_view = self.__editorView.Viewer
+            file_path = "./document.pdf"
+
+            # Pass the string path and the callback function
+            custom_layout = QPageLayout()
+            #custom_layout.setPageSize(QPageSize(QPageSize.PageSizeId.A4))
+            # Note: In Qt 6, QMarginsF is often imported from QtCore
+           # custom_layout.setMargins(QMarginsF(0, 0, 0, 0))
+
+            # Now, call printToPdf with the custom layout
+            self.__editorView.Viewer.page().printToPdf(file_path)
+        except Exception as e:
+            print(e)
 
     def __on_Code_changed(self):
         self.__timer.stop()
         self.__timer.start(1000)
         # Correctly reference the Viewer widget and replace the text
-        self.__editorView.Viewer.setHtml(
-            self.__editor_model.template.replace("%%%%", self.__editorView.editor.text()))
-        pass
 
+        editor_text = self.__editorView.editor.text()
+        try:
+            self.__editorView.Viewer.setHtml(self.compiler.compile(editor_text))
+
+
+
+        except Exception as e:
+            print(e)
+    def __on_reload_template(self):
+        self.__editor_model.loadTemplate("0.0.1")
+        self.__on_Code_changed()
     def __on_compile(self):
         print("fff")
         source_file = (self.__projectControllerInstance.base_path / 'src/data.tex').absolute()

@@ -8,7 +8,7 @@ class page_t(Token):
 
 
     def apply(self) -> str:
-        action =PAGE_TAG
+        action =Tokens.PAGE_TAG
         children_action=""
         for token in self.children:
             children_action.join(token.apply())
