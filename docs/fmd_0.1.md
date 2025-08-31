@@ -1,5 +1,3 @@
-Understood\! You want to add the `@image` syntax to the documentation. Here's the updated "Syntax Reference" section with the new image command included:
-
 
 ## FMD: A Comprehensive Document Scripting Language
 

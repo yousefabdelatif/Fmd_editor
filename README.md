@@ -22,7 +22,7 @@ python ltx_editor/main.py
 * current stable version is ->:
 * current development version is ->:
 ## Documentation 
--> doc_0.1
+-> [Getting Started guide](https://github.com/yousefabdelatif/Fmd_editor/blob/master/docs/fmd_0.1.md )
  
 
 
