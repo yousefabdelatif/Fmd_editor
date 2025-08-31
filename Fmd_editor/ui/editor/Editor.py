@@ -9,7 +9,7 @@ from PyQt6.QtCore import *
 from PyQt6.QtWidgets import *
 
 # Import your custom CodeEditor widget and the Lexer
-from fmd_editor.ui.editor.widgets.TextEditor import CodeEditor
+from Fmd_editor.ui.editor.widgets.TextEditor import CodeEditor
 from PyQt6.QtWebEngineWidgets import QWebEngineView
 
 
@@ -18,6 +18,7 @@ class EditorWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = uic.loadUi('ui/editor/Editor.ui', self)
+        self.setWindowTitle("Fmd_editor")
         self.timer: QTimer = QTimer()
 
         self.singleShot = True

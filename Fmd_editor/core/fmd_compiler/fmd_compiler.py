@@ -2,7 +2,7 @@ import ast  # Added this import for literal_eval
 import json
 import re
 import urllib.parse
-from fmd_editor.core.fitx_compiler.document import Document, Section, ListType, GraphType
+from Fmd_editor.core.fmd_compiler.document import Document, Section, ListType, GraphType
 
 
 class FmdCompiler:
