@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from fmd_editor.core.constants.Constants import TEMPLATE_VERSION
-from fmd_editor.models.project_model import ProjectModel
+from Fmd_editor.core.constants.Constants import TEMPLATE_VERSION
+from Fmd_editor.models.project_model import ProjectModel
 
 
 class ProjectController:

@@ -8,10 +8,10 @@ from PyQt6.QtCore import QTimer
 from PyQt6.QtGui import *
 from PyQt6.QtWidgets import QInputDialog, QFileDialog, QMessageBox
 
-from fmd_editor.controllers.projectController import ProjectController
-from fmd_editor.core.fitx_compiler.fItx_compiler import FitxCompiler
-from fmd_editor.models.editor_model import EditorModel
-from fmd_editor.ui.editor.Editor import EditorWindow
+from Fmd_editor.controllers.projectController import ProjectController
+from Fmd_editor.core.fmd_compiler.fmd_compiler import FmdCompiler
+from Fmd_editor.models.editor_model import EditorModel
+from Fmd_editor.ui.editor.Editor import EditorWindow
 
 
 class EditorController:
@@ -23,7 +23,7 @@ class EditorController:
         # Initialize the timer, which was a cause of a crash
         self.__timer = QTimer()
         self.__timer.setSingleShot(True)
-        self.compiler = FitxCompiler()
+        self.compiler = FmdCompiler()
 
     def view(self):
 
