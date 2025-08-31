@@ -19,8 +19,8 @@ Run the main application from the root directory:
 python ltx_editor/main.py
 ```
 ### version info
-* current stable version is ->:
-* current development version is ->:
+* current stable version is ->: 0.1
+* current development version is ->:0.1
 ## Documentation 
 -> [Getting Started guide](https://github.com/yousefabdelatif/Fmd_editor/blob/master/docs/fmd_0.1.md )
  

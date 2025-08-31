@@ -101,21 +101,7 @@
     <addaction name="actionOpenProject"/>
     <addaction name="menuExport_as"/>
    </widget>
-   <widget class="QMenu" name="menuedit">
-    <property name="title">
-     <string>edit</string>
-    </property>
-    <addaction name="actionfind"/>
-    <addaction name="actionFInd_replace"/>
-   </widget>
-   <widget class="QMenu" name="menuhelp">
-    <property name="title">
-     <string>help</string>
-    </property>
-   </widget>
    <addaction name="menufile"/>
-   <addaction name="menuedit"/>
-   <addaction name="menuhelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action_newproject">
