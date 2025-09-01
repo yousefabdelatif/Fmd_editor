@@ -16,7 +16,7 @@ A modern  application for creating  beautiful documentations .
 Run the main application from the root directory:
 
 ```bash
-python ltx_editor/main.py
+python Fmd_editor/main.py
 ```
 ### version info
 * current stable version is ->: 0.1
